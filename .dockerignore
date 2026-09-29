@@ -1,0 +1,17 @@
+## Ignore build output
+**/bin/
+**/obj/
+**/.vs/
+
+## Ignore user-specific files
+*.user
+*.suo
+
+## Ignore local settings
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+
+## Ignore git
+.git/
+.gitignore

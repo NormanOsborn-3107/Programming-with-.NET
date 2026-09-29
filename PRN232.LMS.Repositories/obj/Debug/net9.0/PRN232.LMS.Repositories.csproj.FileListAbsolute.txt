@@ -1,0 +1,12 @@
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\bin\Debug\net9.0\PRN232.LMS.Repositories.deps.json
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\bin\Debug\net9.0\PRN232.LMS.Repositories.dll
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\bin\Debug\net9.0\PRN232.LMS.Repositories.pdb
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.csproj.AssemblyReference.cache
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.AssemblyInfoInputs.cache
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.AssemblyInfo.cs
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.csproj.CoreCompileInputs.cache
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.dll
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\refint\PRN232.LMS.Repositories.dll
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\PRN232.LMS.Repositories.pdb
+E:\Semester_7\PRN232\LAB_1\PRN232.LMS.Repositories\obj\Debug\net9.0\ref\PRN232.LMS.Repositories.dll

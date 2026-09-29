@@ -1,0 +1,32 @@
+services:
+  # ── SQL Server Database ──────────────────────────────────────────────────────
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: lms-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Password@123456"
+      MSSQL_PID: "Developer"
+    # CONTRACT: do NOT publish the database port - it collides on the grading machine
+    healthcheck:
+      test: [ "CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"Password@123456\" -C -Q \"SELECT 1\" || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+
+  # ── ASP.NET Core API ─────────────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: PRN232.LMS.API/Dockerfile
+    container_name: lms-api
+    ports:
+      - "${API_PORT:-8080}:8080" # CONTRACT: exactly this form
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: "Server=db,1433;Database=LMS;User Id=sa;Password=Password@123456;TrustServerCertificate=True;MultipleActiveResultSets=True"
+    depends_on:
+      db:
+        condition: service_healthy

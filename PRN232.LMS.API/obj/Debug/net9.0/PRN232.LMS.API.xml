@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PRN232.LMS.API</name>
+    </assembly>
+    <members>
+        <member name="T:PRN232.LMS.API.Controllers.CoursesController">
+            <summary>Manages courses.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.CoursesController.GetAll(PRN232.LMS.Repositories.Common.ResourceQueryParameters)">
+            <summary>Get all courses.</summary>
+            <returns>Paged list of all courses.</returns>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.CoursesController.GetById(System.Int32)">
+            <summary>Get a course by ID.</summary>
+            <param name="id">Course ID.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.CoursesController.Create(PRN232.LMS.API.RequestModels.CreateCourseRequest)">
+            <summary>Create a new course.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.CoursesController.Update(System.Int32,PRN232.LMS.API.RequestModels.UpdateCourseRequest)">
+            <summary>Update an existing course.</summary>
+            <param name="id">Course ID.</param>
+            <param name="request">Updated course data.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.CoursesController.Delete(System.Int32)">
+            <summary>Delete a course.</summary>
+            <param name="id">Course ID.</param>
+        </member>
+        <member name="T:PRN232.LMS.API.Controllers.EnrollmentsController">
+            <summary>Manages enrollments.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.EnrollmentsController.GetAll(PRN232.LMS.Repositories.Common.ResourceQueryParameters)">
+            <summary>Get all enrollments.</summary>
+            <returns>Paged list of all enrollments.</returns>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.EnrollmentsController.GetById(System.Int32)">
+            <summary>Get an enrollment by ID.</summary>
+            <param name="id">Enrollment ID.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.EnrollmentsController.Create(PRN232.LMS.API.RequestModels.CreateEnrollmentRequest)">
+            <summary>Create a new enrollment.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.EnrollmentsController.Update(System.Int32,PRN232.LMS.API.RequestModels.UpdateEnrollmentRequest)">
+            <summary>Update an existing enrollment.</summary>
+            <param name="id">Enrollment ID.</param>
+            <param name="request">Updated enrollment data.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.EnrollmentsController.Delete(System.Int32)">
+            <summary>Delete an enrollment.</summary>
+            <param name="id">Enrollment ID.</param>
+        </member>
+        <member name="T:PRN232.LMS.API.Controllers.SemestersController">
+            <summary>Manages semesters.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SemestersController.GetAll(PRN232.LMS.Repositories.Common.ResourceQueryParameters)">
+            <summary>Get all semesters.</summary>
+            <returns>Paged list of all semesters.</returns>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SemestersController.GetById(System.Int32)">
+            <summary>Get a semester by ID.</summary>
+            <param name="id">Semester ID.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SemestersController.Create(PRN232.LMS.API.RequestModels.CreateSemesterRequest)">
+            <summary>Create a new semester.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SemestersController.Update(System.Int32,PRN232.LMS.API.RequestModels.UpdateSemesterRequest)">
+            <summary>Update an existing semester.</summary>
+            <param name="id">Semester ID.</param>
+            <param name="request">Updated semester data.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SemestersController.Delete(System.Int32)">
+            <summary>Delete a semester.</summary>
+            <param name="id">Semester ID.</param>
+        </member>
+        <member name="T:PRN232.LMS.API.Controllers.StudentsController">
+            <summary>Manages students.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.StudentsController.GetAll(PRN232.LMS.Repositories.Common.ResourceQueryParameters)">
+            <summary>Get all students (supports paging, filtering, sorting, field selection).</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.StudentsController.GetById(System.Int32,System.String,System.String)">
+            <summary>Get a student by ID (supports field selection and expansion).</summary>
+            <param name="id">Student ID.</param>
+            <param name="fields">Comma-separated list of fields to include.</param>
+            <param name="expand">Comma-separated list of related entities to expand.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.StudentsController.Create(PRN232.LMS.API.RequestModels.CreateStudentRequest)">
+            <summary>Create a new student.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.StudentsController.Update(System.Int32,PRN232.LMS.API.RequestModels.UpdateStudentRequest)">
+            <summary>Update an existing student.</summary>
+            <param name="id">Student ID.</param>
+            <param name="request">Updated student data.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.StudentsController.Delete(System.Int32)">
+            <summary>Delete a student.</summary>
+            <param name="id">Student ID.</param>
+        </member>
+        <member name="T:PRN232.LMS.API.Controllers.SubjectsController">
+            <summary>Manages subjects.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SubjectsController.GetAll(PRN232.LMS.Repositories.Common.ResourceQueryParameters)">
+            <summary>Get all subjects.</summary>
+            <returns>Paged list of all subjects.</returns>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SubjectsController.GetById(System.Int32)">
+            <summary>Get a subject by ID.</summary>
+            <param name="id">Subject ID.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SubjectsController.Create(PRN232.LMS.API.RequestModels.CreateSubjectRequest)">
+            <summary>Create a new subject.</summary>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SubjectsController.Update(System.Int32,PRN232.LMS.API.RequestModels.UpdateSubjectRequest)">
+            <summary>Update an existing subject.</summary>
+            <param name="id">Subject ID.</param>
+            <param name="request">Updated subject data.</param>
+        </member>
+        <member name="M:PRN232.LMS.API.Controllers.SubjectsController.Delete(System.Int32)">
+            <summary>Delete a subject.</summary>
+            <param name="id">Subject ID.</param>
+        </member>
+        <member name="T:PRN232.LMS.API.ResponseModels.ApiResponse`1">
+            <summary>
+            Standard API response wrapper returned by all endpoints.
+            </summary>
+            <typeparam name="T">Type of the data payload.</typeparam>
+        </member>
+        <member name="P:PRN232.LMS.API.ResponseModels.ApiResponse`1.Success">
+            <summary>Indicates whether the request was processed successfully.</summary>
+        </member>
+        <member name="P:PRN232.LMS.API.ResponseModels.ApiResponse`1.Message">
+            <summary>Human-readable message describing the result.</summary>
+        </member>
+        <member name="P:PRN232.LMS.API.ResponseModels.ApiResponse`1.Data">
+            <summary>The response payload. Null when the request fails.</summary>
+        </member>
+        <member name="P:PRN232.LMS.API.ResponseModels.ApiResponse`1.Errors">
+            <summary>Validation or business-logic errors. Null when the request succeeds.</summary>
+        </member>
+        <member name="T:PRN232.LMS.API.ResponseModels.PagedApiResponse`1">
+            <summary>
+            Paged API response — pagination sits at root level (NOT nested inside data).
+            Format: { success, message, data: [...], errors, pagination: { page, pageSize, totalItems, totalPages } }
+            </summary>
+        </member>
+        <member name="P:PRN232.LMS.API.ResponseModels.PagedApiResponse`1.Pagination">
+            <summary>Pagination metadata at root level per grader contract §6.2.</summary>
+        </member>
+    </members>
+</doc>
